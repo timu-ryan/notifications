@@ -2,7 +2,8 @@ const button = document.querySelector('button');
 const input = document.querySelector('input');
 const list = document.querySelector('ul');
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
+  e.preventDefault();
   const notificationText = input.value;
   console.log(notificationText)
   input.value = '';
