@@ -25,12 +25,12 @@ permissionButton.addEventListener('click', (e) => {
 
 if (Notification.permission === 'default') {
     Notification.requestPermission().then(permission => {
-        if (permission === 'granted') {
-            showNotification();
-        }
+        // if (permission === 'granted') {
+        //     showNotification();
+        // }
     });
 } else if (Notification.permission === 'granted') {
-    showNotification();
+    // showNotification();
 }
 
 // Step 2: Show the notification
